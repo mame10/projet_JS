@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=Montserrat+Alternates:wght@700&family=Montserrat+Subrayada&family=Poppins:ital,wght@1,300&display=swap');
+*{
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+
+#container{
+    display: flex;
+    width: 15%;
+    height: 100vh;
+    justify-content: space-between;
+}
+#admin_profil{
+    display: flex;
+    border-bottom: 0.1em solid white;
+    justify-content: space-evenly;
+}
+
+#im{
+    width: 2em;
+    height: 2em;
+    align-items: center;
+    align-self: center;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+#input_search{
+    display: flex;
+    margin-top: 1em;
+    color: white;
+    border: 0.1em solid white;
+    height: 2em;
+    align-items: center;
+}
+
+input{
+    background-color: transparent;
+    border: none;
+}
+#gauche{
+    display: flex;
+    background-color: rgba(0,0,0,0.6);
+    flex-direction: column;
+    padding: 0.5em;
+}
+
+h4{
+    padding: 0.2em;
+}

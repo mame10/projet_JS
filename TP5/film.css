@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&family=Montserrat+Alternates:wght@700&family=Montserrat+Subrayada&family=Poppins:ital,wght@0,300;1,300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:#22254b;
+    --second-color:#373b69;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary-color);
+    margin: 0;
+}
+
+header{
+    padding: 1.2rem;
+    display: flex;
+    justify-content: flex-end;
+    background-color: var(--second-color);
+}
+
+.search{
+  background-color: transparent;
+  border: 0.1em solid var(--primary-color);
+  padding: 1rem 1rem;
+  border-radius: 4em;
+  color: #fff;
+  font-family: inherit;
+
+}
+
+.search:focus{
+    outline: 0;
+    background-color: var(--primary-color);
+}
+
+.search::placeholder{
+    color: #7378c5;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenu{
+   background-color: var(--second-color);
+   margin: 1rem;
+   width: 26em; 
+   border-radius: 0.3em;
+   box-shadow: 0.1em 0.4em 0.5em rgba(0, 0, 0, 0.1) ;
+   position: relative;
+   overflow: hidden;
+}
+
+.infos{
+    
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: center;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.031em;
+}
+
+.img{
+    width: 100%;
+}
+
+.infos h3{
+    margin-top: 0.1rem;
+    
+}
+.infos span{
+    background-color: var(--primary-color); 
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.19em; 
+    font-weight: bold;
+}
+
+.infos.green{
+    color: lightgreen;
+}
+.infos.orange{
+    color: orange;
+}
+.infos.red{
+    color: red;
+}
+
+.para{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 22em;
+    background-color: #fff;
+    padding: 1rem;
+    transform: translateY(100%);
+    transform:transform 0.3s ease-in;
+}
+
+.contenu:hover .para{
+    transform: translateY(0);
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    border-bottom: 16px solid #3498db;
+    width: 7.5em;
+    height: 7.5em; 
+    -webkit-animation: spin 2s linear infinite; 
+    animation: spin 2s linear infinite;
+    display: none;
+ }
+      
+      
+    @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }

@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url("bacground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+img{
+   width: 100%;
+   height: 100%; 
+}
+#container{
+    position: fixed;
+    top: 20%;
+    left: 25%;
+    height: 35em;
+    width: 60em;
+    border: 0.3em solid white;
+    box-shadow: 1em 2em 3em white;
+    
+}
+
+#blockImage{
+    position: fixed;
+    top: 20%;
+    left: 25%;
+    height: 35em;
+    width: 60em;
+}
+#blockImage:hover{
+    transform: scale(1.2);
+}
+#im{
+    position: relative;
+}
+
+.fa-angle-right{
+    position: absolute;
+    right: 0;
+   
+
+}
+.fa-angle-left{
+    position: absolute;
+    left: 0;
+   
+}
+
+.fa-solid {
+    color: white;
+    font-size: 4em;
+    top: 40%;
+    cursor: pointer;
+}
+
+.fa-solid:hover{
+    transform: scale(2);
+    opacity: 1;
+}
